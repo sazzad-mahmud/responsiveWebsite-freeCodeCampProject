@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(231, 229, 227, 0.993);
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: yellow;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 28px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: rgb(248, 198, 32);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(231, 229, 227, 0.993);
+}
+
+#header-image {
+    flex-basis: 30%;
+    padding-top: 10px;
+    margin: auto;
+}
+
+#header-image img {
+    height: 60px;
+    width: 200px;
+}
+
+#nav-bar {
+    position: relative;
+    flex-basis: 70%;
+}
+
+#nav-bar ul {
+    position: absolute;
+    right: 0;
+    list-style: none;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+input[type="email"] {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 300px;
+    margin: 8px 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+}
+
+.fas {
+    font-size: 50px;
+    color: #FD8E3A;
+}
+
+.service-icon {
+    flex-basis: 15%;
+}
+
+.service-description {
+    flex-basis: 85%;
+}
+
+#how-it-works {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works>iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+.pricing {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: calc(100% / 3);
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.level {
+    background-color: rgb(206, 206, 206);
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product>h2 {
+    margin-top: 15px;
+}
+
+.product>ul {
+    margin: 15px 0;
+}
+
+.product>ul>li {
+    padding: 5px 0;
+}
+
+.product .btn {
+    margin-bottom: 15px;
+}
+
+footer {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    background-color: #ccc9c9;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer-list ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.footer-list ul li {
+    padding-left: 10px;
+}
+
+.copyRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* -----------------------------------responsive---------------- */
+
+@media(max-width:450px) {
+    #header {
+        display: block;
+    }
+    #header-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20 px 0;
+    }
+    #nav-bar ul {
+        position: relative;
+    }
+    .form {
+        width: 80%;
+        margin: 0 auto 30px auto;
+        margin-top: 100px;
+    }
+    .form h2 {
+        font-size: 1.2rem;
+    }
+    input[type="email"] {
+        width: 250px;
+    }
+    .service-icon {
+        display: none;
+    }
+    .container {
+        height: auto;
+        margin-bottom: 15px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    .footer-list ul {
+        justify-content: center;
+    }
+    .copyRight {
+        justify-content: center;
+    }
+}
+
+@media(max-width:720px) {
+    #header-image img {
+        height: auto;
+        width: 150px;
+    }
+    #nav-bar ul li {
+        padding: 0 5px;
+        font-size: 14px;
+    }
+    .container {
+        width: 80%;
+    }
+    .service-description {
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .pricing {
+        flex-direction: column;
+    }
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
